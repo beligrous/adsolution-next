@@ -1,7 +1,9 @@
+import OutInteriorAdvert from "@/components/outInteriorAdvert/OutInteriorAdvert";
+
 export default function Home() {
   return (
     <>
-      <header className="bg-black h-20">
+      <header className="bg-black border-solid border-t-4 border-red-600">
         <div className="w-3/4 mx-auto">
           <div className="text-gray-600  flex justify-between">
             <ul className="flex gap-6">
@@ -17,8 +19,12 @@ export default function Home() {
               Заказать обратный звонок
             </button>
           </div>
-          <div>
-            <ul className="flex text-white gap-6">
+          <div className="flex justify-between">
+            <img
+              src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_180,h_63/https://adsolution.biz.ua/wp-content/uploads/2021/02/Adsolution-logo-2X.png"
+              alt="Adsolution Logo"
+            />
+            <ul className="flex items-center text-white gap-6">
               <li>
                 <a>Услуги</a>
               </li>
@@ -38,8 +44,20 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <main className="min-h-screen p-24">
-        <h1 className="text-center">Here is ADSOLUTION MAIN PAGE</h1>
+      <main className="min-h-screen">
+        <section className="w-full h-max py-52 bg-hero-pattern bg-no-repeat bg-cover">
+          <div className="w-1/3 ml-auto mr-26 p-20">
+            <h1 className="text-5xl text-center">Наружная реклама Харьков</h1>
+            <p className="text-4xl text-center border-solid border-t-4 border-red-600">
+              Вывески
+              <br />
+              Обьемные буквы
+              <br />
+              Таблички
+            </p>
+          </div>
+        </section>
+        <OutInteriorAdvert />
       </main>
     </>
   );
