@@ -1,10 +1,20 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLocationDot,
+  faPhoneFlip,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faViber,
+  faSkype,
+  faSquareFacebook,
+  faSquareInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
     <footer className="bg-black text-[#bfbfbf] h-[545px] text-center pt-10 px-8">
-      <div className="w-[1130px] mx-auto">
+      <section className="w-[1130px] mx-auto border-b-1 border-solid border-inherit">
         <div className="flex justify-center items-center gap-2 my-5">
           <FontAwesomeIcon
             icon={faLocationDot}
@@ -13,11 +23,29 @@ const Footer = () => {
           <span>Украина, г.Харьков</span>
         </div>
         <div className="flex mx-auto py-5 justify-center gap-52">
-          <a href="tel:+380674264526" target="_blanc" rel="noopener noreferrer">
-            +38 (067) 426-45-26
+          <a
+            className="flex items-center gap-1"
+            href="tel:+380674264526"
+            target="_blanc"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faPhoneFlip}
+              style={{ color: "#e73718", width: "20px" }}
+            />
+            <span>+38 (067) 426-45-26</span>
           </a>
-          <a href="tel:+380505919810" target="_blanc" rel="noopener noreferrer">
-            +38 (050) 591-98-10
+          <a
+            className="flex items-center gap-1"
+            href="tel:+380505919810"
+            target="_blanc"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faPhoneFlip}
+              style={{ color: "#e73718", width: "20px" }}
+            />
+            <span>+38 (050) 591-98-10</span>
           </a>
         </div>
         <div className="flex justify-between my-5">
@@ -26,30 +54,62 @@ const Footer = () => {
             alt="Adsolution Logo"
           />
           <a
+            className="flex items-center gap-1"
             href="mailto:info@adsolution.biz.ua"
             target="_blanc"
             rel="noopener noreferrer"
           >
-            info@adsolution.biz.ua
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              style={{ color: "#d92612", width: "20px" }}
+            />
+            <span>info@adsolution.biz.ua</span>
           </a>
           <button className="py-4 px-5 bg-red-600 text-white">
             Связаться с нами
           </button>
         </div>
         <div className="flex mx-auto py-5 justify-center gap-52">
-          <a href="tel:+380674264526" target="_blanc" rel="noopener noreferrer">
-            ADSOLUTION
+          <a
+            className="flex items-center gap-1"
+            href="tel:+380674264526"
+            target="_blanc"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faSkype}
+              style={{ color: "#5f95ec", width: "20px" }}
+            />
+            <span>ADSOLUTION</span>
           </a>
           <a
-            className="before:content-['\f17e']"
+            className="flex items-center gap-1"
             href="tel:+380505919810"
             target="_blanc"
             rel="noopener noreferrer"
           >
-            +38 (050) 591-98-10
+            <FontAwesomeIcon
+              icon={faViber}
+              style={{ color: "#b525e9", width: "20px" }}
+            />
+            <span>+38 (050) 591-98-10</span>
           </a>
         </div>
-      </div>
+      </section>
+      <section className="flex justify-center gap-3 my-5">
+        <a href="https://www.facebook.com/ADSOLUTIONSPACE">
+          <FontAwesomeIcon
+            icon={faSquareFacebook}
+            style={{ color: "#0856dd", width: "34px" }}
+          />
+        </a>
+        <a href="https://www.instagram.com/adsolution">
+          <FontAwesomeIcon
+            icon={faSquareInstagram}
+            style={{ color: "#dd3c92", width: "34px" }}
+          />
+        </a>
+      </section>
     </footer>
   );
 };
