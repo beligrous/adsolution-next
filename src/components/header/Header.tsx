@@ -1,3 +1,6 @@
+import Link from "next/link";
+import Navbar from "../navbar/Navbar";
+
 const Header = () => {
   return (
     <header className="bg-black border-solid border-t-4 border-red-600">
@@ -17,27 +20,13 @@ const Header = () => {
           </button>
         </div>
         <div className="flex justify-between">
-          <img
-            src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_180,h_63/https://adsolution.biz.ua/wp-content/uploads/2021/02/Adsolution-logo-2X.png"
-            alt="Adsolution Logo"
-          />
-          <ul className="flex items-center text-white gap-6">
-            <li>
-              <a>Услуги</a>
-            </li>
-            <li>
-              <a>Статьи</a>
-            </li>
-            <li>
-              <a>Наша работа</a>
-            </li>
-            <li>
-              <a>О нас</a>
-            </li>
-            <li>
-              <a>Контакт</a>
-            </li>
-          </ul>
+          <Link href="/">
+            <img
+              src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_180,h_63/https://adsolution.biz.ua/wp-content/uploads/2021/02/Adsolution-logo-2X.png"
+              alt="Adsolution Logo"
+            />
+          </Link>
+          <Navbar />
         </div>
       </div>
     </header>

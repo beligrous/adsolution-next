@@ -34,7 +34,7 @@ const advertArray = [
 const OutInteriorAdvert = () => {
   return (
     <section className="w-[1100px] mt-10 mx-auto">
-      <h3 className="text-3xl text-center border-b-4 border-solid border-red-500">
+      <h3 className="text-3xl text-center border-b-4 border-solid border-red-500 uppercase">
         наружная и интерьерная реклама
       </h3>
       <ul className="flex flex-wrap justify-between gap-5 my-20">

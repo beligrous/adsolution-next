@@ -9,7 +9,9 @@ import {
   faSkype,
   faSquareFacebook,
   faSquareInstagram,
+  faSquareYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import Navbar from "../navbar/Navbar";
 
 const Footer = () => {
   return (
@@ -78,7 +80,7 @@ const Footer = () => {
           >
             <FontAwesomeIcon
               icon={faSkype}
-              style={{ color: "#5f95ec", width: "20px" }}
+              style={{ color: "#009EDC", width: "20px" }}
             />
             <span>ADSOLUTION</span>
           </a>
@@ -90,7 +92,7 @@ const Footer = () => {
           >
             <FontAwesomeIcon
               icon={faViber}
-              style={{ color: "#b525e9", width: "20px" }}
+              style={{ color: "#7360f2", width: "20px" }}
             />
             <span>+38 (050) 591-98-10</span>
           </a>
@@ -109,6 +111,18 @@ const Footer = () => {
             style={{ color: "#dd3c92", width: "34px" }}
           />
         </a>
+        <a href="https://www.youtube.com/channel/UCPMiCuFBuksWb5U9Z1NodUg?view_as=subscriber">
+          <FontAwesomeIcon
+            icon={faSquareYoutube}
+            style={{
+              color: "#c4302b",
+              width: "34px",
+            }}
+          />
+        </a>
+      </section>
+      <section className="flex justify-center">
+        <Navbar />
       </section>
     </footer>
   );

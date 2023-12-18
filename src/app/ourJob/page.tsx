@@ -5,3 +5,5 @@ const OurJob = () => {
     </>
   );
 };
+
+export default OurJob;
